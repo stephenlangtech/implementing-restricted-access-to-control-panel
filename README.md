@@ -28,6 +28,14 @@ In this tutorial, we configure a Group Policy Object (GPO) in an Active Director
 * Right-click the newly created GPO and select:
   **Edit**
 
+<img src="Screenshot 2026-09-27 102006.png" width="50%" height="50%">  
+
+<img src="Screenshot 2026-09-27 102022.png" width="50%" height="50%">  
+
+<img src="Screenshot 2026-09-27 102045.png" width="50%" height="50%">  
+
+<img src="Screenshot 2026-09-27 102145.png" width="50%" height="50%"> 
+
 ### 2. Configure the Control Panel Restriction
 
 * Navigate to:
@@ -52,7 +60,13 @@ In this tutorial, we configure a Group Policy Object (GPO) in an Active Director
 * Click:
   **OK**
 
-This policy prevents users from opening the Control Panel and accessing Windows PC Settings.
+This policy prevents users from opening the Control Panel and accessing Windows PC Settings.  
+
+<img src="Screenshot 2026-09-27 102331.png" width="65%" height="65%">  
+
+<img src="Screenshot 2026-09-27 102342.png" width="50%" height="50%">  
+
+<img src="Screenshot 2026-09-27 102407.png" width="50%" height="50%">  
 
 ### 3. Apply the GPO to the Appropriate OU
 
@@ -62,20 +76,9 @@ This policy prevents users from opening the Control Panel and accessing Windows 
 * Link the GPO to the Organizational Unit (OU) containing the users who should receive the restriction.
 * For testing purposes, the GPO can be applied to an OU containing the lab users.
 
-Example Active Directory structure:
+Because the restriction is configured under **User Configuration**, the policy is intended to apply to the targeted user accounts.  
 
-```text
-Domain
-│
-├── Users
-│   └── Test User
-│
-└── Computers
-    ├── CLIENT-1
-    └── CLIENT-2
-```
-
-Because the restriction is configured under **User Configuration**, the policy is intended to apply to the targeted user accounts.
+ <img src="screenshot007.png" width="65%" height="65%"> 
 
 ### 4. Force a Group Policy Update
 
@@ -85,6 +88,8 @@ Because the restriction is configured under **User Configuration**, the policy i
 ```cmd
 gpupdate /force
 ```
+
+ <img src="Screenshot 2026-09-27 101210.png" width="80%" height="80%"> 
 
 * This forces the client to retrieve and process the latest applicable Group Policy settings.
 
