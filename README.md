@@ -78,7 +78,7 @@ This policy prevents users from opening the Control Panel and accessing Windows 
 
 Because the restriction is configured under **User Configuration**, the policy is intended to apply to the targeted user accounts.  
 
- <img src="screenshot007.png" width="65%" height="65%"> 
+ <img src="screenshot007.png" width="50%" height="50%"> 
 
 ### 4. Force a Group Policy Update
 
@@ -89,7 +89,7 @@ Because the restriction is configured under **User Configuration**, the policy i
 gpupdate /force
 ```
 
- <img src="Screenshot 2026-09-27 101210.png" width="80%" height="80%"> 
+ <img src="Screenshot 2026-09-27 101210.png" width="65%" height="65%"> 
 
 * This forces the client to retrieve and process the latest applicable Group Policy settings.
 
